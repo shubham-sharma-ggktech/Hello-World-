@@ -1,4 +1,5 @@
-Version Control
+
+
 Version control is a system
 that records changes to a file or set of files over time so that you can recall
 specific versions later.
@@ -6,27 +7,31 @@ It allows you to revert files back to a previous
 state, revert the entire project back to a previous state, compare changes over
 time, see who last modified something that might be causing a problem, who
 introduced an issue and when, and more.
-1.Local Version Control Systems
+1.Local Version Control Systems
+
 programmers long ago developed local VCSs that had a simple database that kept all the changes to files under revision control
 One of the more popular VCS tools was a system called rcs, which is still
 distributed with many computers today
 2.Centralized Version Control Systems
 they need to collaborate with developers on other systems.
-Administrators have fine-grained control over who can do what; and it’s far easier to administer a CVCS than it is to deal with local databases on every client.
-3.Distributed Version Control Systems
+Administrators have fine-grained control over who can do what; and itâ€™s far easier to administer a CVCS than it is to deal with local databases on every client.
+
+3.Distributed Version Control Systems
+
 Every checkout is really a full backup of all the data.
-allows you to set up several types of workflows that aren’t possible in centralized systems, such as hierarchical models.
-A Short History of Git:
+allows you to set up several types of workflows that arenâ€™t possible in centralized systems, such as hierarchical models.
+A Short History of Git
+:
 The Linux kernel is an open source software project of fairly large scope.
 In 2002, the Linux kernel project began using a proprietary DVCS system called BitKeeper.
-• Speed
-• Simple design
-• Strong support for non-linear development (thousands of parallel branches)
-• Fully distributed
-• Able to handle large projects like the Linux kernel efficiently (speed and data size).
+â€¢ Speed
+â€¢ Simple design
+â€¢ Strong support for non-linear development (thousands of parallel branches)
+â€¢ Fully distributed
+â€¢ Able to handle large projects like the Linux kernel efficiently (speed and data size).
 .most other systems store information as a list of file-based changes.
-.Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again.
-.it’s impossible to change the contents of any file or directory without Git knowing about it.
+.Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesnâ€™t store the file again.
+.itâ€™s impossible to change the contents of any file or directory without Git knowing about it.
 .The mechanism that Git uses for this checksumming is called a SHA-1 hash
 Git has three main states that your files can reside in: committed, modified, and staged.
 Committed means that the data is safely stored in your local database.
